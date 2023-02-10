@@ -178,6 +178,30 @@
   "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/@types/json5/-/json5-0.0.29.tgz"
   "version" "0.0.29"
 
+"@types/node@^18.13.0":
+  "integrity" "sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/@types/node/-/node-18.13.0.tgz"
+  "version" "18.13.0"
+
+"@types/prop-types@*":
+  "integrity" "sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/@types/prop-types/-/prop-types-15.7.5.tgz"
+  "version" "15.7.5"
+
+"@types/react@^18.0.27":
+  "integrity" "sha512-3vtRKHgVxu3Jp9t718R9BuzoD4NcQ8YJ5XRzsSKxNDiDonD2MXIT1TmSkenxuCycZJoQT5d2vE8LwWJxBC1gmA=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/@types/react/-/react-18.0.27.tgz"
+  "version" "18.0.27"
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    "csstype" "^3.0.2"
+
+"@types/scheduler@*":
+  "integrity" "sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/@types/scheduler/-/scheduler-0.16.2.tgz"
+  "version" "0.16.2"
+
 "@typescript-eslint/parser@^5.42.0":
   "integrity" "sha512-4yg+FJR/V1M9Xoq56SF9Iygqm+r5LMXvheo6DQ7/yUWynQ4YfCRnsKuRgqH4EQ5Ya76rVwlEpw4Xu+TgWQUcdA=="
   "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/@typescript-eslint/parser/-/parser-5.48.1.tgz"
@@ -340,13 +364,13 @@
   "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/ast-types-flow/-/ast-types-flow-0.0.7.tgz"
   "version" "0.0.7"
 
-"autoprefixer@^10.4.12":
-  "integrity" "sha512-WrCGV9/b97Pa+jtwf5UGaRjgQIg7OK3D06GnoYoZNcG1Xb8Gt3EfuKjlhh9i/VtT16g6PYjZ69jdJ2g8FxSC4Q=="
-  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/autoprefixer/-/autoprefixer-10.4.12.tgz"
-  "version" "10.4.12"
+"autoprefixer@^10.4.13":
+  "integrity" "sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/autoprefixer/-/autoprefixer-10.4.13.tgz"
+  "version" "10.4.13"
   dependencies:
     "browserslist" "^4.21.4"
-    "caniuse-lite" "^1.0.30001407"
+    "caniuse-lite" "^1.0.30001426"
     "fraction.js" "^4.2.0"
     "normalize-range" "^0.1.2"
     "picocolors" "^1.0.0"
@@ -415,10 +439,10 @@
   "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/camelcase-css/-/camelcase-css-2.0.1.tgz"
   "version" "2.0.1"
 
-"caniuse-lite@^1.0.30001400", "caniuse-lite@^1.0.30001406", "caniuse-lite@^1.0.30001407":
-  "integrity" "sha512-OnyeJ9ascFA9roEj72ok2Ikp7PHJTKubtEJIQ/VK3fdsS50q4KWy+Z5X0A1/GswEItKX0ctAp8n4SYDE7wTu6A=="
-  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/caniuse-lite/-/caniuse-lite-1.0.30001420.tgz"
-  "version" "1.0.30001420"
+"caniuse-lite@^1.0.30001400", "caniuse-lite@^1.0.30001406", "caniuse-lite@^1.0.30001426":
+  "integrity" "sha512-XY7UbUpGRatZzoRft//5xOa69/1iGJRBlrieH6QYrkKLIFn3m7OVEJ81dSrKoy2BnKsdbX5cLrOispZNYo9v2w=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/caniuse-lite/-/caniuse-lite-1.0.30001451.tgz"
+  "version" "1.0.30001451"
 
 "chalk@^4.0.0":
   "integrity" "sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA=="
@@ -483,6 +507,11 @@
   "integrity" "sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg=="
   "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/cssesc/-/cssesc-3.0.0.tgz"
   "version" "3.0.0"
+
+"csstype@^3.0.2":
+  "integrity" "sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/csstype/-/csstype-3.1.1.tgz"
+  "version" "3.1.1"
 
 "damerau-levenshtein@^1.0.8":
   "integrity" "sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA=="
@@ -856,7 +885,7 @@
   "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
   "version" "3.1.3"
 
-"fast-glob@^3.2.11", "fast-glob@^3.2.9":
+"fast-glob@^3.2.11", "fast-glob@^3.2.12", "fast-glob@^3.2.9":
   "integrity" "sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w=="
   "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/fast-glob/-/fast-glob-3.2.12.tgz"
   "version" "3.2.12"
@@ -1368,7 +1397,7 @@
   "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/merge2/-/merge2-1.4.1.tgz"
   "version" "1.4.1"
 
-"micromatch@^4.0.4":
+"micromatch@^4.0.4", "micromatch@^4.0.5":
   "integrity" "sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA=="
   "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/micromatch/-/micromatch-4.0.5.tgz"
   "version" "4.0.5"
@@ -1621,17 +1650,17 @@
     "lilconfig" "^2.0.5"
     "yaml" "^1.10.2"
 
-"postcss-nested@5.0.6":
-  "integrity" "sha512-rKqm2Fk0KbA8Vt3AdGN0FB9OBOMDVajMG6ZCf/GoHgdxUJ4sBFp0A/uMIRm+MJUdo33YXEtjqIz8u7DAp8B7DA=="
-  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/postcss-nested/-/postcss-nested-5.0.6.tgz"
-  "version" "5.0.6"
+"postcss-nested@6.0.0":
+  "integrity" "sha512-0DkamqrPcmkBDsLn+vQDIrtkSbNkv5AD/M322ySo9kqFkCIYklym2xEmWkwo+Y3/qZo34tzEPNUw4y7yMCdv5w=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/postcss-nested/-/postcss-nested-6.0.0.tgz"
+  "version" "6.0.0"
   dependencies:
-    "postcss-selector-parser" "^6.0.6"
+    "postcss-selector-parser" "^6.0.10"
 
-"postcss-selector-parser@^6.0.10", "postcss-selector-parser@^6.0.6":
-  "integrity" "sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w=="
-  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/postcss-selector-parser/-/postcss-selector-parser-6.0.10.tgz"
-  "version" "6.0.10"
+"postcss-selector-parser@^6.0.10", "postcss-selector-parser@^6.0.11":
+  "integrity" "sha512-zbARubNdogI9j7WY4nQJBiNqQf3sLS3wCP4WfOidu+p28LofJqDH1tcXypGrcmMHhDk2t9wGhCsYe/+szLTy1g=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/postcss-selector-parser/-/postcss-selector-parser-6.0.11.tgz"
+  "version" "6.0.11"
   dependencies:
     "cssesc" "^3.0.0"
     "util-deprecate" "^1.0.2"
@@ -1641,10 +1670,10 @@
   "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   "version" "4.2.0"
 
-"postcss@^8.4.14", "postcss@^8.4.18":
-  "integrity" "sha512-Wi8mWhncLJm11GATDaQKobXSNEYGUHeQLiQqDFG1qQ5UTDPTEvKw0Xt5NsTpktGTwLps3ByrWsBrG0rB8YQ9oA=="
-  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/postcss/-/postcss-8.4.18.tgz"
-  "version" "8.4.18"
+"postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.2.14", "postcss@^8.4.21":
+  "integrity" "sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/postcss/-/postcss-8.4.21.tgz"
+  "version" "8.4.21"
   dependencies:
     "nanoid" "^3.3.4"
     "picocolors" "^1.0.0"
@@ -1923,10 +1952,10 @@
     "@pkgr/utils" "^2.3.1"
     "tslib" "^2.4.0"
 
-"tailwindcss@^3.1.8":
-  "integrity" "sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g=="
-  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/tailwindcss/-/tailwindcss-3.1.8.tgz"
-  "version" "3.1.8"
+"tailwindcss@^3.2.6":
+  "integrity" "sha512-BfgQWZrtqowOQMC2bwaSNe7xcIjdDEgixWGYOd6AL0CbKHJlvhfdbINeAW76l1sO+1ov/MJ93ODJ9yluRituIw=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/tailwindcss/-/tailwindcss-3.2.6.tgz"
+  "version" "3.2.6"
   dependencies:
     "arg" "^5.0.2"
     "chokidar" "^3.5.3"
@@ -1934,19 +1963,20 @@
     "detective" "^5.2.1"
     "didyoumean" "^1.2.2"
     "dlv" "^1.1.3"
-    "fast-glob" "^3.2.11"
+    "fast-glob" "^3.2.12"
     "glob-parent" "^6.0.2"
     "is-glob" "^4.0.3"
     "lilconfig" "^2.0.6"
+    "micromatch" "^4.0.5"
     "normalize-path" "^3.0.0"
     "object-hash" "^3.0.0"
     "picocolors" "^1.0.0"
-    "postcss" "^8.4.14"
+    "postcss" "^8.0.9"
     "postcss-import" "^14.1.0"
     "postcss-js" "^4.0.0"
     "postcss-load-config" "^3.1.4"
-    "postcss-nested" "5.0.6"
-    "postcss-selector-parser" "^6.0.10"
+    "postcss-nested" "6.0.0"
+    "postcss-selector-parser" "^6.0.11"
     "postcss-value-parser" "^4.2.0"
     "quick-lru" "^5.1.1"
     "resolve" "^1.22.1"
@@ -2015,10 +2045,10 @@
   "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/type-fest/-/type-fest-0.20.2.tgz"
   "version" "0.20.2"
 
-"typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", "typescript@>=3.3.1":
-  "integrity" "sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg=="
-  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/typescript/-/typescript-4.9.4.tgz"
-  "version" "4.9.4"
+"typescript@^4.9.5", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", "typescript@>=3.3.1":
+  "integrity" "sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g=="
+  "resolved" "https://rscomponents.jfrog.io/rscomponents/api/npm/npm/typescript/-/typescript-4.9.5.tgz"
+  "version" "4.9.5"
 
 "unbox-primitive@^1.0.2":
   "integrity" "sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw=="
