@@ -1,16 +1,15 @@
 import Letter from "../letter/letter";
 
-const PlayerSection = (toggled) => {
+const Player = (toggled) => {
   return (
-    <div className="align-middle">
+    <div className="align-middle my-2 mx-4">
       <Letter value="S." toggled={toggled}></Letter>
       <Letter value="K." toggled={toggled}></Letter>
       <Letter value="A." toggled={toggled}></Letter>
       <Letter value="T." toggled={toggled}></Letter>
       <Letter value="E" toggled={toggled}></Letter>
-      <div className="inline-block mx-4">Player Name</div>
     </div>
   );
 };
 
-export default PlayerSection;
+export default Player;

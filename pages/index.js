@@ -1,7 +1,7 @@
-import PlayerSection from "../components/player-section";
+import { PlayerSelect } from "../components";
 
 const LandingPage = () => {
-  return <PlayerSection />;
+  return <PlayerSelect />;
 };
 
 export default LandingPage;
