@@ -3,11 +3,7 @@ import Router from "next/router";
 import { useState } from "react";
 
 const PlayerSelect = () => {
-  const [playerAmount, setPlayerAmount] = useState(0);
-  //const players = ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5"];
-
   const handleClick = (playerAmount: number) => {
-    setPlayerAmount(playerAmount);
     Router.push({
       pathname: "/game",
       query: { playerAmount },
@@ -50,7 +46,6 @@ const PlayerSelect = () => {
       >
         5
       </button>
-      <Link href="/game">link</Link>
     </div>
   );
 };

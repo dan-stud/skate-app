@@ -1,8 +1,11 @@
 import React from "react";
-import { PlayerSelect } from "../components";
 import "../styles/globals.css";
 
-const LandingPage = () => {
-  return <PlayerSelect />;
+const LandingPage = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Component {...pageProps} />
+    </>
+  );
 };
 export default LandingPage;

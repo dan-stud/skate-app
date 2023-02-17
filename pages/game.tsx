@@ -1,15 +1,33 @@
 import { useRouter } from "next/router";
-import { Player } from "../components";
+import React, { useEffect, useState } from "react";
+import Player from "../components/player/player";
 
 const Game = () => {
-  debugger;
-  // const router = useRouter();
-  // const playerAmount = router.query.playerAmount;
-  // type Props = {
-  //playerAmount: number;
-  // };
-
-  return <div>Hello World</div>;
+  const router = useRouter();
+  const [players, setPlayers] = useState([] as Array<string>);
+  useEffect(() => {
+    const playerAmountParse = parseInt(router.query.playerAmount + "");
+    const playerAmount = Number.isNaN(playerAmountParse)
+      ? 0
+      : playerAmountParse;
+    if (playerAmount == 0) {
+      return;
+    }
+    const newPlayers = [] as Array<string>;
+    for (let index = 0; index < playerAmount; index++) {
+      const value = localStorage.getItem("player-" + index);
+      const name = value ? value : "player-" + (index + 1);
+      newPlayers.push(name);
+    }
+    setPlayers(newPlayers);
+    console.log("Players set ", newPlayers);
+  }, []);
+  return (
+    <>
+      {players.map((name: string, i: number) => (
+        <Player key={i} name={name} toggled={true}></Player>
+      ))}
+    </>
+  );
 };
-
 export default Game;
