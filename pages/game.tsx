@@ -2,6 +2,8 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Player from "../components/player/player";
 
+export const PLAYER_TAG = "player-";
+
 const Game = () => {
   const router = useRouter();
   const [players, setPlayers] = useState([] as Array<string>);
@@ -15,8 +17,8 @@ const Game = () => {
     }
     const newPlayers = [] as Array<string>;
     for (let index = 0; index < playerAmount; index++) {
-      const value = localStorage.getItem("player-" + index);
-      const name = value ? value : "player-" + (index + 1);
+      const value = localStorage.getItem(PLAYER_TAG + index);
+      const name = value ? value : PLAYER_TAG + (index + 1);
       newPlayers.push(name);
     }
     setPlayers(newPlayers);
@@ -25,7 +27,7 @@ const Game = () => {
   return (
     <>
       {players.map((name: string, i: number) => (
-        <Player key={i} name={name} toggled={true}></Player>
+        <Player id={i} key={i} name={name} toggled={true}></Player>
       ))}
     </>
   );

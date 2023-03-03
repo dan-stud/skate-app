@@ -12,7 +12,7 @@ const Letter = (props: Props) => {
   return (
     <button
       className={
-        toggled === true ? "text-pink-200 text-7xl" : "text-grey-200 text-7xl"
+        toggled === true ? "text-gray-300 text-7xl" : "text-black text-7xl"
       }
       onClick={toggleLetter}
     >
