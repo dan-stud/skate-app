@@ -11,8 +11,8 @@ const PlayerSelect = () => {
   return (
     <div className="h-screen bg-gray-100 to-stone-200 px-8 pt-40 grid grid-cols-5 grid-rows-5 gap-5 bg-initial">
       <div></div>
-      <div className="font-graffiti font-bold text-black text-center text-4xl col-span-3">
-        Amount of players:
+      <div className="font-painterz font-extrabold text-center text-5xl col-span-3  text-transparent bg-clip-text bg-gradient-to-br from-red-500 to-yellow-400">
+        PLAYAZ:
       </div>
       <button
         className=" bg-gradient-to-br from-purple-100 to-white text-gray-800 font-creepster font-semibold text-xl py-8 px-3 border border-gray-400 rounded shadow-xl drop-shadow-lg row-start-2 col-start-2 w-16 h-24"

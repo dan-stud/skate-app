@@ -13,7 +13,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
       },
 
       fontFamily: {
-        graffiti: ["var(--font-graffiti), ...fontFamily.sans"],
+        painterz: ["var(--font-painterz), ...fontFamily.sans"],
       },
     },
   },

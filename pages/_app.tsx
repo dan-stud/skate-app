@@ -1,15 +1,15 @@
 import React from "react";
 import "../styles/globals.css";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 
-const graffiti = localFont({
+const painterz = localFont({
   src: "../fonts/Painterz.woff2",
-  variable: "--font-graffiti",
+  variable: "--font-painterz",
 });
 
 const LandingPage = ({ Component, pageProps }) => {
   return (
-    <main className={`${graffiti.variable} font-graffiti`}>
+    <main className={`${painterz.variable} font-painterz`}>
       <Component {...pageProps} />
     </main>
   );
