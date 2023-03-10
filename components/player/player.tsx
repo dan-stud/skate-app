@@ -26,16 +26,16 @@ function PlayerSection(props: Props) {
   };
 
   return (
-    <div className="align-middle pl-4 py-3">
-      <Letter value="S." toggle={props.toggled}></Letter>{" "}
-      <Letter value="K." toggle={props.toggled}></Letter>{" "}
-      <Letter value="A." toggle={props.toggled}></Letter>{" "}
-      <Letter value="T." toggle={props.toggled}></Letter>{" "}
-      <Letter value="E" toggle={props.toggled}></Letter>{" "}
+    <div className="inline-grid grid-cols-6 align-middle px-2 py-3 mx-2 my-2 bg-white shadow-2xl rounded-md bg-opacity-95 border border-gray-300">
+      <Letter value="S" toggle={props.toggled}></Letter>
+      <Letter value="K" toggle={props.toggled}></Letter>
+      <Letter value="A" toggle={props.toggled}></Letter>
+      <Letter value="T" toggle={props.toggled}></Letter>
+      <Letter value="E" toggle={props.toggled}></Letter>
       <textarea
         id="player-name-text"
         onChange={handleChange}
-        className="text-sm relative inline-block text-center pt-3 ml-1 w-20"
+        className="text-sm text-center pt-6 font-dafoe bg-transparent resize-none"
         ref={textAreaRef}
         rows={1}
         defaultValue={playersName}
