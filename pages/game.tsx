@@ -23,14 +23,13 @@ const Game = () => {
     }
     setPlayers(newPlayers);
     console.log("Players set ", newPlayers);
-  }, []);
+  }, [router.query.playerAmount]);
 
-  function shuffleArray(players) {
-    for (let i = players.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [players[i], players[j]] = [players[j], players[i]];
-    }
-    console.log(players);
+  const newOrder = () => players.sort(() => (Math.random() > 0.5 ? 1 : -1));
+
+  function shuffleArray() {
+    const newPlayers = newOrder();
+    setPlayers([...newPlayers]);
   }
 
   return (
@@ -41,8 +40,8 @@ const Game = () => {
 
       <div className="text-center mt-2">
         <button
-          className="bg-white p-0.5 rounded items-center shadow-2xl border-4 border-gray-300 bg-opacity-95"
-          onClick={shuffleArray}
+          className="bg-white p-0.5 rounded items-center shadow-2xl border border-gray-300 bg-opacity-95"
+          onClick={() => shuffleArray()}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
