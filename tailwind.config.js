@@ -1,5 +1,3 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 /** @type {import('tailwindcss').Config} */ module.exports = {
   content: [
     "./pages/**/*.{js,jsx,ts,tsx}",
@@ -13,7 +11,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
       },
 
       fontFamily: {
-        painterz: ["var(--font-painterz), ...fontFamily.sans"],
+        sedge: ["var(--font-sedge)"],
       },
     },
   },

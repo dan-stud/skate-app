@@ -39,9 +39,9 @@ const Game = () => {
         <Player id={i} key={i} name={name} toggled={true}></Player>
       ))}
 
-      <div className="text-center mt-8">
+      <div className="text-center mt-2">
         <button
-          className="bg-white p-0.5 rounded items-center shadow-2xl border border-gray-300 bg-opacity-95"
+          className="bg-white p-0.5 rounded items-center shadow-2xl border-4 border-gray-300 bg-opacity-95"
           onClick={shuffleArray}
         >
           <svg
@@ -49,7 +49,7 @@ const Game = () => {
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
-            className="w-14 h-14 stroke-gray-300"
+            className="w-14 h-14 stroke-gray-500"
           >
             <path
               stroke-linecap="round"

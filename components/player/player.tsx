@@ -11,6 +11,7 @@ type Props = {
 
 function PlayerSection(props: Props) {
   const [value, setValue] = useState("");
+  const [active, setActive] = useState(false);
 
   const playersName = props.name ? props.name : "Player Name";
 
@@ -25,17 +26,23 @@ function PlayerSection(props: Props) {
     setValue(val);
   };
 
+  const playerOut = (evt: React.ChangeEvent<HTMLButtonElement>) => {
+    if (evt.target?.value;
+
+    setActive(true);
+  };
+
   return (
-    <div className="inline-grid grid-cols-6 align-middle px-2 py-3 mx-2 my-2 bg-white shadow-2xl rounded-md bg-opacity-95 border border-gray-300">
-      <Letter value="S" toggle={props.toggled}></Letter>
-      <Letter value="K" toggle={props.toggled}></Letter>
-      <Letter value="A" toggle={props.toggled}></Letter>
-      <Letter value="T" toggle={props.toggled}></Letter>
-      <Letter value="E" toggle={props.toggled}></Letter>
+    <div className="inline-grid grid-cols-6 align-middle px-2 py-3 mx-2 my-2 bg-white shadow-2xl rounded-md bg-opacity-95 border-2 border-gray-300">
+      <Letter disabled={!active} value="S" toggle={props.toggled}></Letter>
+      <Letter disabled={!active} value="K" toggle={props.toggled}></Letter>
+      <Letter disabled={!active} value="A" toggle={props.toggled}></Letter>
+      <Letter disabled={!active} value="T" toggle={props.toggled}></Letter>
+      <Letter out={!lost} disabled={!active} value="E" toggle={props.toggled}></Letter>
       <textarea
         id="player-name-text"
         onChange={handleChange}
-        className="text-sm text-center pt-6 font-dafoe bg-transparent resize-none"
+        className="text-sm text-center pt-6 font-dafoe bg-transparent resize-none font-sedge"
         ref={textAreaRef}
         rows={1}
         defaultValue={playersName}
